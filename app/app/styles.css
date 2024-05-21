@@ -1,0 +1,239 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: #333;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  border: 1px solid red;
+  text-align: left;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* Search button*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  background-image: linear-gradient(45deg, #0f766e, #18e0b5);
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.search:hover {
+  box-shadow: 0 0 10px rgb(83, 119, 116);
+}
+
+.search :is(input, button) {
+  background: transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.search__input {
+  width: 200px;
+  transition: width 0.5s;
+}
+.search__input.hidden {
+  width: 0;
+  padding: 0;
+  border: none;
+  margin: 0;
+  overflow: hidden;
+}
+.search__button {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.search__button:hover {
+  color: #ffffff;
+}
+
+
+.search__input-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.filter__button:hover{
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.filter__input-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+::placeholder {
+  font: inherit;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 999; /* Ensure the overlay appears on top of other elements */
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  max-width: 80%;
+  text-align: left;
+}
+
+.overlay-content h2 {
+  margin-top: 0;
+}
+
+.overlay-content p {
+  margin-top: 10px;
+}
+
+.overlay-content button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.overlay-content button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.overlay-recepies {
+  display: none;
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the overlay */
+  width: 60%; /* Adjust the width as needed */
+  max-width: 500px; /* Set a maximum width */
+  height: 60%; /* Adjust the height as needed */
+  max-height: 500px; /* Set a maximum height */
+  overflow: auto; /* Enable scrolling if content overflows */
+  background-color: #fff; /* White background */
+  z-index: 999; /* Ensure the overlay appears on top of other elements */
+  border-radius: 20px; /* Rounded corners for prettier look */
+  padding: 40px; /* Add padding for content */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+  text-align: center; /* Align text in the center */
+}
+
+.overlay-recepies-content {
+  color: #000; 
+ 
+}
+
+.overlay-recepies::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.overlay-recepies::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.overlay-recepies::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.overlay-recepies::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.overlay-close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #888;
+}
+
+.overlay-close-btn:hover {
+  color: #555;
+}
+
+
+
+.filter{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  height: 44px;
+  margin-left: 30px
+
+}
